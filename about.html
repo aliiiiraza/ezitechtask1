@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">🧺 <span>Laundry</span></div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      
+ <div class="dropdown">
+    <a href="#" class="dropbtn">Blog</a>
+    <ul class="dropdown-menu">
+       <li><a href="blog.html">Blog</a></li>
+      <li><a href="blogdetail.html">Blog Details</a></li>
+      <li><a href="element.html">Element</a></li>
+    </ul>
+  </div>
+
+
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <span class="phone">📞 (08) 728 256 266</span>
+      <a href="#" class="appointment-btn">Make an Appointment</a>
+    </div>
+  </header>
+<br>
+  <main>
+<section class="about-banner">
+    <h2>About Us</h2>
+</section>
+ <section class="about-section">
+    <div class="about-img">
+      <img src="images/man.jpg" alt="About Us">
+    </div>
+    <div class="about-text">
+      <h2>About company</h2>
+      <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+      <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+      <a href="#" class="btn">About Us</a>
+    </div>
+  </section>
+
+  <section class="achievement">
+    <p class="badge">Fun Fact</p>
+    <h2>Company achievement</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>4000</h3>
+        <p>The automated process starts as soon as your clothes go into the machine.</p>
+      </div>
+      <div class="stat">
+        <h3>300+</h3>
+        <p>The automated process starts as soon as your clothes go into the machine.</p>
+      </div>
+      <div class="stat">
+        <h3>95%</h3>
+        <p>The automated process starts as soon as your clothes go into the machine.</p>
+      </div>
+    </div>
+    </section>
+<section class="call-section">
+    <div class="call-content">
+      <div>
+        <h2>Call us for a service</h2>
+        <p>We deliver the goods to the most complicated places on earth</p>
+      </div>
+      <a href="#" class="learn-btn">📞 Learn More</a>
+    </div>
+  </section>
+
+     <section class="testimonial-slider">
+    <div class="slider-container">
+      <span class="arrow left" onclick="prevSlide()">&#8249;</span>
+      <div class="testimonial-box" id="testimonial-box">
+        <!-- Testimonials will be loaded by JS -->
+      </div>
+      <span class="arrow right" onclick="nextSlide()">&#8250;</span>
+    </div>
+  </section>
+
+  
+
+  </main>
+
+<section class="contact-section">
+  <div class="map-contact">
+    <iframe
+      src="https://www.google.com/maps?q=New+York,+USA&output=embed"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contact-box">
+      <h2>Laundry service</h2>
+      <p>The automated process starts as soon as your clothes.</p>
+      <ul>
+        <li>📍 256/A, Green road, NYC-9034</li>
+        <li>📞 (89) 267 256-3902</li>
+        <li>📧 laundry@578.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>🧺 Laundry</h3>
+      <p>Suspendsis varius enim in eros elementum tristique. Duis cursus.</p>
+      <div class="social-icons">
+        <a href="#">🔵</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h4>Services</h4>
+      <ul>
+        <li>- Dry Cleaning</li>
+        <li>- Dry Clean</li>
+        <li>- Ironing Services</li>
+        <li>- Laundry Service London</li>
+        <li>- Laundry App</li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>Get in touch</h4>
+      <p style="color:#5e7af6">(90) 898 789-8957</p>
+      <p>laundry@567.com</p>
+      <p>789/A, Green road NYC-9089</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright ©2025 All rights reserved | This template is made with 💙 by <a href="#">Colorlib</a></p>
+  </div>
+</footer>
+
+<script>
+    const testimonials = [
+      {
+        name: "Rupaya",
+        quote: "The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!",
+        stars: 5,
+        images: [
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/women/3.jpg"
+        ],
+        active: 1
+      },
+      {
+        name: "Ayesha",
+        quote: "Best laundry service I've used in the city. Quick delivery and friendly staff!",
+        stars: 4,
+        images: [
+          "https://randomuser.me/api/portraits/women/4.jpg",
+          "https://randomuser.me/api/portraits/women/5.jpg",
+          "https://randomuser.me/api/portraits/women/6.jpg"
+        ],
+        active: 2
+      },
+      {
+        name: "Fatima",
+        quote: "Excellent washing quality. Clothes smell fresh and feel soft!",
+        stars: 5,
+        images: [
+          "https://randomuser.me/api/portraits/women/7.jpg",
+          "https://randomuser.me/api/portraits/women/8.jpg",
+          "https://randomuser.me/api/portraits/women/9.jpg"
+        ],
+        active: 0
+      }
+    ];
+
+    let current = 0;
+
+    function showTestimonial(index) {
+      const box = document.getElementById("testimonial-box");
+      const t = testimonials[index];
+      box.innerHTML = `
+        <div class="avatars">
+          ${t.images.map((img, i) =>
+            `<img src="${img}" class="${i === t.active ? 'active' : ''}" />`
+          ).join('')}
+        </div>
+        <p class="quote">"${t.quote}"</p>
+        <div class="stars">${"⭐".repeat(t.stars)}</div>
+        <p class="author">- ${t.name}</p>
+      `;
+    }
+
+    function nextSlide() {
+      current = (current + 1) % testimonials.length;
+      showTestimonial(current);
+    }
+
+    function prevSlide() {
+      current = (current - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(current);
+    }
+
+    // Initial
+    showTestimonial(current);
+
+    // Auto-slide every 7 seconds
+    setInterval(nextSlide, 7000);
+  </script>
+</body>
+</html>
