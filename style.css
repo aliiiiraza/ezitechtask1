@@ -15,6 +15,47 @@ body {
   box-sizing: border-box;
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Menu Behavior */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+    color: #333;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+    background: #f9f9f9;
+    padding-left: 20px;
+  }
+}
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
