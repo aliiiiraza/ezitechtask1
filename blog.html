@@ -7,30 +7,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <header class="navbar">
-    <div class="logo">🧺 <span>Laundry</span></div>
+    <header class="navbar">
+  <div class="logo">🧺 <span>Laundry</span></div>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <div class="nav-wrapper" id="navWrapper">
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      
- <div class="dropdown">
-    <a href="#" class="dropbtn">Blog</a>
-    <ul class="dropdown-menu">
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="blogdetail.html">Blog Details</a></li>
-      <li><a href="element.html">Element</a></li>
-    </ul>
-  </div>
-
-
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Blog</a>
+        <ul class="dropdown-menu">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blogdetail.html">Blog Details</a></li>
+          <li><a href="element.html">Element</a></li>
+        </ul>
+      </div>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-right">
       <span class="phone">📞 (08) 728 256 266</span>
       <a href="#" class="appointment-btn">Make an Appointment</a>
     </div>
-  </header>
+  </div>
+</header>
 <br>
   <main>
 <section class="about-banner">
@@ -100,5 +102,19 @@
   </div>
 </footer>
 </main>
+
+
+<script>
+
+
+  
+  function toggleMenu() {
+    const nav = document.getElementById("navWrapper");
+    nav.classList.toggle("show");
+  }
+
+
+</script>
+
 </body>
 </html>
